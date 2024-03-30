@@ -5,6 +5,8 @@ class Photo(Camera):
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
         self.cam=Camera(play=True)
+        #self.cam=Camera(play=False) #Another way.....
+        #self.play=True
         self.add_widget(self.cam)
 
 class CameraApp(App):
