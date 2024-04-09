@@ -1,0 +1,34 @@
+<MainWidget>
+    name:n
+    age:a
+    std:s
+    GridLayout:
+        cols:1
+        spacing:20
+        padding:50
+        size:root.width,root.height
+        GridLayout:
+            cols:2
+            spacing:10
+            Label:
+                text:"Name : "
+            TextInput:
+                id:n
+                multiline:False
+            Label:
+                text:"Age : "
+            TextInput:
+                id:a
+                multiline:False
+            Label:
+                text:"Std : "
+            TextInput:
+                id:s
+                multiline:False
+        Button:
+            text:"Submit"
+            font_size:32
+            #on_press:root.press()
+            background_color:1,0,0,1
+            pos_hint:0.2,0.5
+            size_hint:0.2,0.2
