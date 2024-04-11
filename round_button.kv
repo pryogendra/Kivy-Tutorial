@@ -1,0 +1,22 @@
+<Root>
+    BoxLayout:
+        size:root.width,root.height
+        orientation:"vertical"
+        padding:20
+        spacing:30
+        Button:
+            text:"Hello"
+        RoundedButton:
+            text:"Click Me!!"
+            #color:(0,1,1,1)
+            size_hint:1,.2
+<RoundedButton@Button>
+    background_color:1,0,0,0
+    background_normal:''
+    canvas.before:
+        Color:
+            rgba:(1,0,0,1)
+        RoundedRectangle:
+            size:self.size
+            pos:self.pos
+            radius:[30]
