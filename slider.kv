@@ -1,0 +1,16 @@
+<Root>
+    BoxLayout:
+        size:root.width,root.height
+        orientation:"vertical"
+        padding:30
+
+        Label:
+            text:"Slider Value"
+            id:label
+            font_size:30
+        Slider:
+            min:0
+            max:50
+            step:1
+            orientation:"horizontal"
+            on_value:root.slided(*args)
