@@ -1,0 +1,31 @@
+WindowManager:
+    FirstWindow:
+    SecondWindow:
+<FirstWindow>
+    name:"first"
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            text:"First Window"
+            font_size:30
+        Button:
+            text:"Next"
+            font_size:30
+            on_release:
+                app.root.current="second"
+                root.manager.transition.direction="up"
+
+
+<SecondWindow>
+    name:"second"
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            text:"Second Window"
+            font_size:30
+        Button:
+            text:"Back"
+            font_size:30
+            on_release:
+                app.root.current="first"
+                root.manager.transition.direction="right"
