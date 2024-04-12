@@ -1,0 +1,15 @@
+<Root>
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        Label:
+            text:"Pick Favorite color Here"
+            id:label
+            font_size:30
+        Spinner:
+            id:spinner
+            text:"Favorite Color"
+            values:["Blue","Green","Yellow","Red"]
+            on_text:root.clicked(spinner.text)
+        Label:
+            text:""
