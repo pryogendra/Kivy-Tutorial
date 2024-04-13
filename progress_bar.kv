@@ -1,0 +1,21 @@
+<Root>
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        Label:
+            id:label
+            text:"0"
+            font_size:25
+
+        ProgressBar:
+            id:progress
+            min:0
+            max:100
+            value:0
+            pos_hint_x:.8
+
+        Button:
+            text:"Click Me"
+            on_press:root.pressed()
+            size_hint:.5,.2
+            pos_hint:{'center_x':.5,'center_y':.5}
